@@ -67,3 +67,7 @@ public
 .contentful.json
 # Local Netlify folder
 .netlify
+
+# Key files
+.env.development
+.env.production
