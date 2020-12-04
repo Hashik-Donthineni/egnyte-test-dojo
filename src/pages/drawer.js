@@ -36,12 +36,7 @@ class DrawerPage extends React.Component {
                 <Dropdown overlay={menu}>
                   <Button>
                     <img
-                      style={{
-                        height: "20px",
-                        width: "20px",
-                        display: "inline",
-                        marginRight: "10px",
-                      }}
+                      className="user-profile-badge"
                       src="profile.svg"
                       alt="logo"
                     />
