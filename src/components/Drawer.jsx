@@ -25,6 +25,19 @@ class Drawer extends React.Component {
     this.setState({ collapsed });
   };
 
+  getLogoImageCSS() {
+    if (this.state.collapsed == true) {
+      return "logo-image-collapsed";
+    }
+    return "logo-image";
+  }
+
+  getLogoTextCSS() {
+    if (this.state.collapsed == true) {
+      return "logo-text-collapsed";
+    }
+    return "logo-text";
+  }
   render() {
     const { collapsed } = this.state;
 
@@ -33,8 +46,12 @@ class Drawer extends React.Component {
         <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
           <div className="siderlogo">
             <a>
-              <img className="logo-image" src="dojoicon.svg" alt="logo" />
-              <h1 className="logo-text">Dojo Dev</h1>
+              <img
+                className={this.getLogoImageCSS()}
+                src="dojoicon.svg"
+                alt="logo"
+              />
+              <h1 className={this.getLogoTextCSS()}>Dojo Dev</h1>
             </a>
           </div>
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
