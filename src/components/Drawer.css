@@ -1,0 +1,31 @@
+.siderlogo {
+  min-height: 32px;
+  justify-content: center;
+}
+
+.logo-image {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.logo-text {
+  font-size: 18px;
+  margin: 15px;
+  color: white;
+  display: inline;
+}
+
+.logo-image-collapsed {
+  height: 30px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.logo-text-collapsed {
+  font-size: 18px;
+  margin: 15px;
+  color: white;
+  display: none;
+}
