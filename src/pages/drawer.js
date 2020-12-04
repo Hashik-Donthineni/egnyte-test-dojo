@@ -1,8 +1,15 @@
 import React from "react";
 import Drawer from "../components/Drawer";
+import { Layout } from "antd";
 
 const DrawerPage = () => {
-  return <Drawer />;
+  return (
+    <>
+      <Layout style={{ minHeight: "100vh" }}>
+        <Drawer />
+      </Layout>
+    </>
+  );
 };
 
 export default DrawerPage;
