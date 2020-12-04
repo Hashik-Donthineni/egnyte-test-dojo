@@ -1,0 +1,22 @@
+.top-nav-content {
+  align-items: center;
+  float: right;
+  padding: 0px;
+  margin-top: -10px;
+  margin-right: 70px;
+}
+
+.user-button {
+  margin: 0px 0px 0px 0px;
+}
+
+.header-style {
+  padding: 0;
+  height: 44px;
+  background: white;
+}
+
+.search-style {
+  width: 200px;
+  margin: 15px 10px 10px 0px;
+}

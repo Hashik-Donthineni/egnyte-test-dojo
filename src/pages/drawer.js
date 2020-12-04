@@ -1,8 +1,21 @@
 import React from "react";
 import Drawer from "../components/Drawer";
-import { Layout } from "antd";
+import "./drawer.css";
+import { Input, Layout, Menu, Dropdown, Button } from "antd";
+import { DownOutlined } from "@ant-design/icons";
 
 const { Header, Content, Footer } = Layout;
+const { Search } = Input;
+
+const menu = (
+  <Menu>
+    <Menu.Item key="1">Profile</Menu.Item>
+    <Menu.Item key="2">Edit</Menu.Item>
+    <Menu.Item key="3">Logout</Menu.Item>
+  </Menu>
+);
+
+const onSearch = (value) => console.log(value);
 
 class DrawerPage extends React.Component {
   render() {
@@ -11,14 +24,32 @@ class DrawerPage extends React.Component {
         <Layout style={{ minHeight: "100vh" }}>
           <Drawer />
           <Layout>
-            <Header
-              className="site-layout-sub-header-background"
-              style={{
-                padding: 0,
-                height: "44px",
-                background: "white",
-              }}
-            />
+            <Header className="site-layout-sub-header-background header-style">
+              <div className="top-nav-content">
+                <Search
+                  placeholder="Search"
+                  enterButton
+                  allowClear
+                  onSearch={onSearch}
+                  className="search-style"
+                />
+                <Dropdown overlay={menu}>
+                  <Button>
+                    <img
+                      style={{
+                        height: "20px",
+                        width: "20px",
+                        display: "inline",
+                        marginRight: "10px",
+                      }}
+                      src="profile.svg"
+                      alt="logo"
+                    />
+                    Hashik <DownOutlined />
+                  </Button>
+                </Dropdown>
+              </div>
+            </Header>
             <Content style={{ margin: "24px 16px 0" }}>
               <div
                 className="site-layout-background"
