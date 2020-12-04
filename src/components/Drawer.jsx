@@ -1,6 +1,9 @@
 import React from "react";
 import "antd/dist/antd.css";
 import { Layout, Menu } from "antd";
+import "./Drawer.css";
+import "../../public/dojoicon.svg";
+
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -28,7 +31,12 @@ class Drawer extends React.Component {
     return (
       <Layout style={{ minHeight: "100vh" }}>
         <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
-          <div className="logo" />
+          <div className="siderlogo">
+            <a>
+              <img className="logo-image" src="dojoicon.svg" alt="logo" />
+              <h1 className="logo-text">Dojo Dev</h1>
+            </a>
+          </div>
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
             <Menu.Item key="1" icon={<PieChartOutlined />}>
               Option 1
