@@ -12,13 +12,19 @@ const DrawerPage = () => {
         <Layout>
           <Header
             className="site-layout-sub-header-background"
-            style={{ padding: 0, height: "44px" }}
+            style={{
+              padding: 0,
+              height: "44px",
+              background: "white",
+            }}
           />
           <Content style={{ margin: "24px 16px 0" }}>
             <div
               className="site-layout-background"
               style={{ padding: 24, minHeight: 360 }}
-            ></div>
+            >
+              INJECT A COMPONENT HERE
+            </div>
           </Content>
           <Footer style={{ textAlign: "center" }}>
             DOJO Developer Guide @ Created by DOJO Team
