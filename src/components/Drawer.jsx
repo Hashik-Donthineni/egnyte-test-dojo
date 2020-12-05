@@ -3,13 +3,12 @@ import "antd/dist/antd.css";
 import { Layout, Menu } from "antd";
 import "./Drawer.css";
 import "../../public/dojoicon.svg";
+import Swag from "./swag";
+import Dashboard from "./Dashboard";
 
 import {
   DesktopOutlined,
   PieChartOutlined,
-  FileOutlined,
-  TeamOutlined,
-  UserOutlined,
   BookOutlined,
   FormatPainterOutlined,
   ApiOutlined,
@@ -48,7 +47,11 @@ class Drawer extends React.Component {
 
   menuItemClick = (item) => {
     console.log(item);
-    this.props.inject(item.key);
+    if (item.key == 1) {
+      this.props.inject(<Dashboard />);
+    } else if (item.key == 2) {
+      this.props.inject(<Swag />);
+    }
   };
 
   render() {

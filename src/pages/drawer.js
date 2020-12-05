@@ -53,7 +53,7 @@ class DrawerPage extends React.Component {
               <div
                 className="site-layout-background"
                 id="comonent-container"
-                style={{ padding: 24, minHeight: 360 }}
+                style={{ padding: "0px", minHeight: 360, margin: "0px" }}
               />
             </Content>
             <Footer style={{ textAlign: "center" }}>
