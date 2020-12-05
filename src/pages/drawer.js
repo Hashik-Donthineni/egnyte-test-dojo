@@ -17,7 +17,6 @@ const menu = (
 );
 
 const onSearch = (value) => console.log(value);
-
 const injectComponent = (component) => {
   ReactDOM.render(component, document.getElementById("comonent-container"));
 };
@@ -27,7 +26,7 @@ class DrawerPage extends React.Component {
     return (
       <>
         <Layout style={{ minHeight: "100vh" }}>
-          <Drawer />
+          <Drawer inject={injectComponent} />
           <Layout>
             <Header className="site-layout-sub-header-background header-style">
               <div className="top-nav-content">

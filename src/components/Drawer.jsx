@@ -38,6 +38,12 @@ class Drawer extends React.Component {
     }
     return "logo-text";
   }
+
+  menuItemClick = (item) => {
+    console.log(item);
+    this.props.inject(item.key);
+  };
+
   render() {
     const { collapsed } = this.state;
 
@@ -53,12 +59,17 @@ class Drawer extends React.Component {
             <h1 className={this.getLogoTextCSS()}>Dojo Dev</h1>
           </a>
         </div>
-        <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
+        <Menu
+          onClick={this.menuItemClick}
+          theme="dark"
+          defaultSelectedKeys={["1"]}
+          mode="inline"
+        >
           <Menu.Item key="1" icon={<PieChartOutlined />}>
-            Option 1
+            Dashboard
           </Menu.Item>
           <Menu.Item key="2" icon={<DesktopOutlined />}>
-            Option 2
+            Swagger UI
           </Menu.Item>
           <SubMenu key="sub1" icon={<UserOutlined />} title="User">
             <Menu.Item key="3">Tom</Menu.Item>
