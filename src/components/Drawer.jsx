@@ -10,6 +10,13 @@ import {
   FileOutlined,
   TeamOutlined,
   UserOutlined,
+  BookOutlined,
+  FormatPainterOutlined,
+  ApiOutlined,
+  QuestionCircleOutlined,
+  MessageOutlined,
+  ApartmentOutlined,
+  SkinOutlined,
 } from "@ant-design/icons";
 
 const { Sider } = Layout;
@@ -68,20 +75,47 @@ class Drawer extends React.Component {
           <Menu.Item key="1" icon={<PieChartOutlined />}>
             Dashboard
           </Menu.Item>
+
           <Menu.Item key="2" icon={<DesktopOutlined />}>
             Swagger UI
           </Menu.Item>
-          <SubMenu key="sub1" icon={<UserOutlined />} title="User">
-            <Menu.Item key="3">Tom</Menu.Item>
-            <Menu.Item key="4">Bill</Menu.Item>
-            <Menu.Item key="5">Alex</Menu.Item>
+
+          <Menu.Item key="3" icon={<ApartmentOutlined />}>
+            Architect's Corner
+          </Menu.Item>
+
+          <SubMenu key="sub1" icon={<BookOutlined />} title="Startup Kits">
+            <Menu.Item key="4">UI Kit</Menu.Item>
+            <Menu.Item key="5">Design Kit</Menu.Item>
+            <Menu.Item key="6">Component Kit</Menu.Item>
           </SubMenu>
-          <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
-            <Menu.Item key="6">Team 1</Menu.Item>
-            <Menu.Item key="8">Team 2</Menu.Item>
+
+          <SubMenu key="sub2" icon={<ApiOutlined />} title="API Specification">
+            <Menu.Item key="7">Version 2.1</Menu.Item>
+            <Menu.Item key="8">Version 2.0.9</Menu.Item>
+            <Menu.Item key="9">Version 2.0.5</Menu.Item>
           </SubMenu>
-          <Menu.Item key="9" icon={<FileOutlined />}>
-            Files
+
+          <SubMenu
+            key="sub3"
+            icon={<FormatPainterOutlined />}
+            title="UI Specifications"
+          >
+            <Menu.Item key="10">Version 2.1</Menu.Item>
+            <Menu.Item key="11">Version 2.0.9</Menu.Item>
+            <Menu.Item key="12">Version 2.0.5</Menu.Item>
+          </SubMenu>
+
+          <Menu.Item key="13" icon={<SkinOutlined />}>
+            Reporting Templates
+          </Menu.Item>
+
+          <Menu.Item key="14" icon={<QuestionCircleOutlined />}>
+            F.A.Q
+          </Menu.Item>
+
+          <Menu.Item key="15" icon={<MessageOutlined />}>
+            Contact Us
           </Menu.Item>
         </Menu>
       </Sider>
