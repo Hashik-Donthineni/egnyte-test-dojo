@@ -92,10 +92,11 @@ class Dashboard extends React.Component {
               </Card>
             </Col>
           </Row>
-          <Row>
+          <Row style={{ marginTop: "20px" }}>
             <Col span={12}>
               <Card
                 hoverable
+                bordered={false}
                 cover={<img src="/images/image014.png" bordered={false} />}
               >
                 <Meta
@@ -105,19 +106,21 @@ class Dashboard extends React.Component {
               </Card>
             </Col>
             <Col span={12}>
-              <List
-                size="small"
-                header={<Title level={4}>Latest Releases</Title>}
-                footer={<div>Footer</div>}
-                bordered
-                dataSource={data}
-                renderItem={(item) => (
-                  <List.Item>
-                    {<RightCircleTwoTone />}
-                    {" " + item}
-                  </List.Item>
-                )}
-              />
+              <Card bordered={false}>
+                <List
+                  size="small"
+                  header={<Title level={4}>Latest Releases</Title>}
+                  footer={<div>Footer</div>}
+                  bordered
+                  dataSource={data}
+                  renderItem={(item) => (
+                    <List.Item>
+                      {<RightCircleTwoTone />}
+                      {" " + item}
+                    </List.Item>
+                  )}
+                />
+              </Card>
             </Col>
           </Row>
         </div>
