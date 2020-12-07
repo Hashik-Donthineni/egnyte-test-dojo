@@ -32,23 +32,16 @@ class Dashboard extends React.Component {
     return (
       <>
         <div className="site-statistic-demo-card">
-          <Row>
-            <Col span={12}>
-              <Card height={"15*vmin"}>
-                <Title level={2}>DojoDev Developer Portal</Title>
-                <Divider plain></Divider>
-                <Title level={4}>
-                  #KeepCALM <br />
-                  #AndTrustTheDev <br />
-                  #iAmADev <br />
-                </Title>
-              </Card>
-            </Col>
-            <Col span={12}>
-              <Card>
-                <Image className="hero-image" src="/dev.svg" />
-              </Card>
-            </Col>
+          <Row span={24}>
+            <Card className="hero-card-style">
+              <div className="dojo-title-text">DojoDev </div> <br />
+              <div className="dev-portal-title-text">Developer Portal</div>
+              <Title level={4}>
+                #KeepCALM <br />
+                #AndTrustTheDev <br />
+                #iAmADev <br />
+              </Title>
+            </Card>
           </Row>
           <Row>
             <Col span={6}>

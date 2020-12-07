@@ -5,13 +5,28 @@
   height: 30px;
 }
 
+.dev-portal-title-text {
+  color: #391f54;
+  font-size: 48px;
+  font-family: "Signika", sans-serif;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.dojo-title-text {
+  color: #391f54;
+  font-family: "Signika", sans-serif;
+  font-size: 30px;
+}
+
 .card-text {
   text-align: center;
 }
 
-.hero-image {
-  height: 600px;
-  width: 600px;
-  margin: 0%;
-  padding: 0%;
+.hero-card-style {
+  background-image: url(/computer.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100vw;
+  height: 500px;
 }
