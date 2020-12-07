@@ -1,0 +1,29 @@
+.top-nav-content {
+  align-items: center;
+  float: right;
+  padding: 0px;
+  margin-top: -10px;
+  margin-right: 70px;
+}
+
+.user-button {
+  margin: 0px 0px 0px 0px;
+}
+
+.header-style {
+  padding: 0;
+  height: 44px;
+  background: white;
+}
+
+.search-style {
+  width: 250px;
+  margin: 15px 25px 10px 0px;
+}
+
+.user-profile-badge {
+  height: 20px;
+  width: 20px;
+  display: inline;
+  margin-right: 10px;
+}
