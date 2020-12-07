@@ -4,6 +4,7 @@ import Drawer from "../components/Drawer";
 import "./drawer.css";
 import { Input, Layout, Menu, Dropdown, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
+import Dashboard from "../components/Dashboard";
 
 const { Header, Content, Footer } = Layout;
 const { Search } = Input;
@@ -63,6 +64,10 @@ class DrawerPage extends React.Component {
         </Layout>
       </>
     );
+  }
+
+  componentDidMount() {
+    injectComponent(<Dashboard />);
   }
 }
 
