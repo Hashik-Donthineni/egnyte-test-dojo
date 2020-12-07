@@ -49,7 +49,12 @@ class Drawer extends React.Component {
     console.log(item);
     if (item.key == 1) {
       this.props.inject(<Dashboard />);
-    } else if (item.key == 2) {
+    } else if (
+      item.key == 2 ||
+      item.key == 7 ||
+      item.key == 8 ||
+      item.key == 9
+    ) {
       this.props.inject(<Swag />);
     }
   };
@@ -94,9 +99,9 @@ class Drawer extends React.Component {
           </SubMenu>
 
           <SubMenu key="sub2" icon={<ApiOutlined />} title="API Specification">
-            <Menu.Item key="7">Version 2.1</Menu.Item>
-            <Menu.Item key="8">Version 2.0.9</Menu.Item>
-            <Menu.Item key="9">Version 2.0.5</Menu.Item>
+            <Menu.Item key="7">Charting</Menu.Item>
+            <Menu.Item key="8">Transition</Menu.Item>
+            <Menu.Item key="9">Data Retrieval</Menu.Item>
           </SubMenu>
 
           <SubMenu
