@@ -97,7 +97,7 @@ class Dashboard extends React.Component {
               <Card
                 hoverable
                 bordered={false}
-                cover={<img src="/images/image014.png" bordered={false} />}
+                cover={<img src="/images/image014.jpg" bordered={false} />}
               >
                 <Meta
                   title="Talk: Agile Essence and Fluency"
