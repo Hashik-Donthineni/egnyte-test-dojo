@@ -33,7 +33,7 @@ class Dashboard extends React.Component {
       <>
         <div className="site-statistic-demo-card">
           <Row span={24}>
-            <Card className="hero-card-style">
+            <Card className="hero-card-style" bordered={false}>
               <div className="dojo-title-text">DojoDev </div> <br />
               <div className="dev-portal-title-text">Developer Portal</div>
               <Title level={4}>
@@ -47,7 +47,8 @@ class Dashboard extends React.Component {
             <Col span={6}>
               <Card
                 className="card-text"
-                title="# of Lines of Code"
+                bordered={false}
+                title="# Lines of Code"
                 extra={<QuestionCircleFilled />}
               >
                 <Image className="card-graph" src="/images/image018.png" />
@@ -60,6 +61,7 @@ class Dashboard extends React.Component {
             <Col span={6}>
               <Card
                 className="card-text"
+                bordered={false}
                 title="Active Builds per Month"
                 extra={<QuestionCircleFilled />}
               >
@@ -70,6 +72,7 @@ class Dashboard extends React.Component {
             <Col span={6}>
               <Card
                 className="card-text"
+                bordered={false}
                 title="Planned Releases per Month"
                 extra={<QuestionCircleFilled />}
               >
@@ -80,6 +83,7 @@ class Dashboard extends React.Component {
             <Col span={6}>
               <Card
                 className="card-text"
+                bordered={false}
                 title="Daily API calls"
                 extra={<QuestionCircleFilled />}
               >
@@ -90,7 +94,10 @@ class Dashboard extends React.Component {
           </Row>
           <Row>
             <Col span={12}>
-              <Card hoverable cover={<img src="/images/image014.png" />}>
+              <Card
+                hoverable
+                cover={<img src="/images/image014.png" bordered={false} />}
+              >
                 <Meta
                   title="Talk: Agile Essence and Fluency"
                   description="It's been over a decade since we wrote the Manifesto for Agile Software Development, and the agile meme has been more successful than we ever could have hoped for. But like any success, there is the regular danger of Semantic Diffusion. "
