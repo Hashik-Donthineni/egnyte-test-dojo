@@ -49,12 +49,7 @@ class Drawer extends React.Component {
     console.log(item);
     if (item.key == 1) {
       this.props.inject(<Dashboard />);
-    } else if (
-      item.key == 2 ||
-      item.key == 7 ||
-      item.key == 8 ||
-      item.key == 9
-    ) {
+    } else if (item.key == 7 || item.key == 8 || item.key == 9) {
       this.props.inject(<Swag />);
     }
   };
@@ -85,7 +80,7 @@ class Drawer extends React.Component {
           </Menu.Item>
 
           <Menu.Item key="2" icon={<DesktopOutlined />}>
-            Swagger UI
+            Enterprise Standards
           </Menu.Item>
 
           <Menu.Item key="3" icon={<ApartmentOutlined />}>
@@ -99,9 +94,9 @@ class Drawer extends React.Component {
           </SubMenu>
 
           <SubMenu key="sub2" icon={<ApiOutlined />} title="API Specification">
-            <Menu.Item key="7">Charting</Menu.Item>
-            <Menu.Item key="8">Transition</Menu.Item>
-            <Menu.Item key="9">Data Retrieval</Menu.Item>
+            <Menu.Item key="7">Charting API</Menu.Item>
+            <Menu.Item key="8">Transaction API</Menu.Item>
+            <Menu.Item key="9">Data Retrieval API</Menu.Item>
           </SubMenu>
 
           <SubMenu
