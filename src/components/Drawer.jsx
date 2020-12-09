@@ -5,6 +5,7 @@ import "./Drawer.css";
 import "../../public/dojoicon.svg";
 import Swag from "./swag";
 import Dashboard from "./Dashboard";
+import ArchitectsCorner from "./ArchitectsCorner";
 
 import {
   DesktopOutlined,
@@ -51,6 +52,8 @@ class Drawer extends React.Component {
       this.props.inject(<Dashboard />);
     } else if (item.key == 7 || item.key == 8 || item.key == 9) {
       this.props.inject(<Swag />);
+    } else if (item.key == 3) {
+      this.props.inject(<ArchitectsCorner />);
     }
   };
 
