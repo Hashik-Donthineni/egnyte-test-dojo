@@ -94,7 +94,13 @@ class ArchitectsCorner extends React.Component {
         }}
         dataSource={listData}
         renderItem={(item) => (
-          <Card hoverable>
+          <Card
+            hoverable
+            style={{
+              marginBottom: "10px",
+              padding: "0px",
+            }}
+          >
             <List.Item
               key={item.title}
               actions={[
