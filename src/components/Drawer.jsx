@@ -6,6 +6,7 @@ import "../../public/dojoicon.svg";
 import Swag from "./swag";
 import Dashboard from "./Dashboard";
 import ArchitectsCorner from "./ArchitectsCorner";
+import Icon from "./Icons";
 
 import {
   DesktopOutlined,
@@ -54,6 +55,8 @@ class Drawer extends React.Component {
       this.props.inject(<Swag />);
     } else if (item.key == 3) {
       this.props.inject(<ArchitectsCorner />);
+    } else if (item.key == 10) {
+      this.props.inject(<Icon />);
     }
   };
 
@@ -107,9 +110,9 @@ class Drawer extends React.Component {
             icon={<FormatPainterOutlined />}
             title="UI Specifications"
           >
-            <Menu.Item key="10">Version 2.1</Menu.Item>
-            <Menu.Item key="11">Version 2.0.9</Menu.Item>
-            <Menu.Item key="12">Version 2.0.5</Menu.Item>
+            <Menu.Item key="10">Icons</Menu.Item>
+            <Menu.Item key="11">Inputs</Menu.Item>
+            <Menu.Item key="12">Buttons</Menu.Item>
           </SubMenu>
 
           <Menu.Item key="13" icon={<SkinOutlined />}>
