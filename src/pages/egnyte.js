@@ -35,7 +35,7 @@ class nite extends React.Component {
           />
         );
       },
-      "https://www.google.com/"
+      "https://5ff3519bfb4fd853e1ab2ee6--pedantic-leakey-87d22e.netlify.app/egnyte/"
     );
   };
 
