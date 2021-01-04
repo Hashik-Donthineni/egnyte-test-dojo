@@ -1,16 +1,42 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Button, Alert } from "antd";
+import Egnyte from "egnyte-js-sdk";
 
 const injectComponent = (component) => {
   console.log("INJECTING");
   ReactDOM.render(component, document.getElementById("component-container"));
 };
 
-class Egnyte extends React.Component {
+class nite extends React.Component {
   state = {};
   buttonClicked = () => {
-    injectComponent(<Alert message="Success Tips" type="success" showIcon />);
+    var sdk = Egnyte.init("https://hashikd.egnyte.com", {
+      key: "j8s8392ncthurffb2pw8guhh",
+    });
+
+    sdk.API.auth.requestTokenPopup(
+      function () {
+        console.log("Success");
+
+        injectComponent(
+          <Alert message="Success Tips" type="success" showIcon />
+        );
+      },
+      function () {
+        console.log("Failure");
+
+        injectComponent(
+          <Alert
+            message="Error"
+            description="This is an error message about copywriting."
+            type="error"
+            showIcon
+          />
+        );
+      },
+      "https://www.google.com/"
+    );
   };
 
   render() {
@@ -32,4 +58,4 @@ class Egnyte extends React.Component {
   }
 }
 
-export default Egnyte;
+export default nite;
